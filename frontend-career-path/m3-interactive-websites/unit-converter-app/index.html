@@ -1,45 +1,50 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>David's Unit Converter</title>
-  <link rel="stylesheet" href="./src/style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div id="header">
-            <h1>Metric/Imperial Unit Conversion</h1>
-            <h2><span id="unit-el">0</span></h2>
-            <input type="number"  
-            placeholder="Enter number here..." 
-            id="number-el" 
-            maxlength="8" 
-            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></input>
-            <button onclick="getNumberValue()">Submit</button>
-        </div>
-        <div class="data-box">
-            <h3>Length (Meter/Feet)</h3>
-            <h4><span id="length-el">0 Meters = 0.000 Feet | 0 Feet = 0.000 Meters</span></h4>
-        </div>
-        <div class="data-box">
-            <h3>Volume (Litres/Gallons)</h3>
-            <h4><span id="volume-el">0 Litres = 0.000 Gallons | 0 Gallons = 0.000 Litres</span></h4>
-        </div>
-        <div class="data-box">
-            <h3>Mass (Kilograms/Pounds)</h3>
-            <h4><span id="mass-el">0 Kilograms = 0.000 Pounds | 0 Pounds = 0.000 Kilograms</span></h4>
-        </div>
-        <script src="./src/index.js"></script>
-    </body>
-</html>
-<!-- partial -->
-  <script  src="./src/script.js"></script>
-
-</body>
+  <head>
+    <link rel="stylesheet" href="./src/styles.css" />
+	<title>Metric/Imperial Unit Converter</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Metric/Imperial Unit Conversion</h1>
+      <h2>
+        <span id="unit-el">
+          0
+        </span>
+      </h2>
+      <input
+        id="number-el"
+        type="number"
+        placeholder="Enter number here..."
+        maxlength="8"
+      />
+      <button id="submit-button">
+        Submit
+      </button>
+    </div>
+    <div class="data-box">
+      <h3>Length (Meter/Feet)</h3>
+      <h4>
+        <span id="length-el">
+          0 Meters = 0.000 Feet | 0 Feet = 0.000 Meters
+        </span>
+      </h4>
+    </div>
+    <div class="data-box">
+      <h3>Volume (Litres/Gallons)</h3>
+      <h4>
+        <span id="volume-el">
+          0 Litres = 0.000 Gallons | 0 Gallons = 0.000 Litres
+        </span>
+      </h4>
+    </div>
+    <div class="data-box">
+      <h3>Mass (Kilograms/Pounds)</h3>
+      <h4>
+        <span id="mass-el">
+          0 Kilograms = 0.000 Pounds | 0 Pounds = 0.000 Kilograms
+        </span>
+      </h4>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
 </html>
