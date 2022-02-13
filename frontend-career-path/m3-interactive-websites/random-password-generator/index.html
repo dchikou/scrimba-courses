@@ -1,44 +1,56 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Password Generator</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-<!-- partial:index.partial.html -->
 <html lang="en">
     <head>
         <title>Literally's Random Password Generator</title>
-        <link rel="stylesheet" href="./src/style.css" />
+        <link rel="stylesheet" href="src/style.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     </head>
     <body>
         <header>
-            <div id="title"><h1>Generate a <p class="accent">random password</p></h1>
-            <p>Never use an insecure password again.</p></div>
+            <div id="title">
+                <h1>
+                    Generate a
+                    <p class="accent">random password</p>
+                </h1>
+                <p>Never use an insecure password again.</p>
+            </div>
             <div class="container">
-            <div><button id="generator" onclick="genPass()"><i class="material-icons">bolt</i><span id="button-text">Generate Passwords</span></button></div> 
-            <div><input id="length-input" type="number" placeholder="Length"></input></div>
+                <div>
+                    <button id="generator">
+                        <i class="material-icons">bolt</i>
+                        <span id="button-text">Generate Passwords</span>
+                    </button>
+                </div>
+                <input id="length-input" type="number" placeholder="Length" />
             </div>
         </header>
         <main>
             <div class="flex-container">
                 <div class="left-buttons">
-                    <button class="pass-button" onclick="copyPassOne()"><span id="passOne"><i class="material-icons"style="color:#202B3C;">more_horiz</i></span></button>
-                    <button class="pass-button" onclick="copyPassTwo()"><span id="passTwo" ><i class="material-icons" style="color:#202B3C;">more_horiz</i></span></button>
+                    <button id="pass-button-1" class="pass-button">
+                        <span id="passOne">
+                            <i class="material-icons" style="color: #202b3c">more_horiz</i>
+                        </span>
+                    </button>
+                    <button id="pass-button-2" class="pass-button">
+                        <span id="passTwo">
+                            <i class="material-icons" style="color: #202b3c">more_horiz</i>
+                        </span>
+                    </button>
                 </div>
                 <div class="right-buttons">
-                    <button class="pass-button" onclick="copyPassThree()"><span id="passThree"><i class="material-icons" style="color:#202B3C;">more_horiz</i></span></button>
-                    <button class="pass-button" onclick="copyPassFour()"><span id="passFour"><i class="material-icons" style="color:#202B3C;">more_horiz</i></span></button>
+                    <button id="pass-button-3" class="pass-button">
+                        <span id="passThree">
+                            <i class="material-icons" style="color: #202b3c">more_horiz</i>
+                        </span>
+                    </button>
+                    <button id="pass-button-4" class="pass-button">
+                        <span id="passFour">
+                            <i class="material-icons" style="color: #202b3c">more_horiz</i>
+                        </span>
+                    </button>
                 </div>
             </div>
         </main>
         <script src="./src/script.js"></script>
     </body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
-</body>
 </html>
