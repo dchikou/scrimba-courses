@@ -1,0 +1,98 @@
+html, body {
+    margin: 0 10px 0 0 ;
+    padding: 0 0 0 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #1F2937;
+}
+
+i {
+}
+
+header {
+    padding-bottom: 40px;
+    border-bottom: #2F3E53 solid 1px;
+    margin-bottom: 25px;
+}
+
+main {
+    padding-top: 20px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 225px;
+    color: #fff;
+}
+
+input {
+    background: #273549;
+    color: #10B981;
+    box-shadow: none;
+    border: none;
+    width: 75px;
+    margin-left: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.accent {
+    color: #10B981;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+}
+
+.pass-button {
+    background-color: #273549;
+    padding: 5px 3px;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #10B981;
+}
+
+#button-text {
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    font-size: 17px
+}
+
+#title {
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+#generator {
+    display: flex;
+    background-color: #10B981;
+    padding-left: 10px;
+}

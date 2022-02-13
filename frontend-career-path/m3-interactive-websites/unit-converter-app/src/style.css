@@ -1,0 +1,67 @@
+html, body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #1F2937;
+    color: #fff;
+}
+
+h1 {
+    font-size: 30px; 
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 2px 10px;
+    box-shadow: 0 0 10px indigo;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(
+        315deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(263deg 100% 23%) 11%,
+        hsl(274deg 100% 25%) 22%,
+        hsl(282deg 100% 27%) 33%,
+        hsl(289deg 100% 30%) 44%,
+        hsl(295deg 100% 32%) 56%,
+        hsl(301deg 100% 34%) 67%,
+        hsl(306deg 100% 40%) 78%,
+        hsl(311deg 100% 45%) 89%,
+        hsl(314deg 100% 50%) 100%);
+}
+
+#header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(
+        40deg,
+        hsl(240deg 64% 41%) 0%,
+        hsl(250deg 66% 41%) 11%,
+        hsl(260deg 66% 41%) 22%,
+        hsl(270deg 67% 42%) 33%,
+        hsl(280deg 67% 42%) 44%,
+        hsl(290deg 69% 43%) 56%,
+        hsl(299deg 70% 43%) 67%,
+        hsl(310deg 71% 43%) 78%,
+        hsl(319deg 71% 44%) 89%,
+        hsl(329deg 72% 44%) 100%);
+}
+
+.data-box {
+    padding-top: 10px;
+}
