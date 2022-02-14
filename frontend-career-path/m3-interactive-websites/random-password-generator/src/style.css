@@ -2,6 +2,7 @@ html, body {
     margin: 0 10px 0 0 ;
     padding: 0 0 0 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-width: 350px;
 }
 
 h1 {
@@ -12,9 +13,6 @@ h1 {
 
 body {
     background-color: #1F2937;
-}
-
-i {
 }
 
 header {
