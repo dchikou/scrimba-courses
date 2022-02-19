@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="../src/index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Invoice Creator</h1>
+            <p><h2>Thank you for choosing <span id="company-el">our company!</span></h2></p>
+        </div>
+        <div id="container">
+            <button id="wash-btn">Wash Car: $10</button>
+            <button id="mow-btn">Mow Lawn: $20</button>
+            <button id="weeds-btn">Pull Weeds: $30</button>
+        </div class="content">
+            <div class="textbox" id="task-el">
+                <p class="left-side">TASK</p>
+                <p class="right-side">TOTAL</p>
+                <span id="wash-el"></span>
+                <span id="mow-el"></span>
+                <span id="weeds-el"></span>
+            </div>
+            <div class="textbox">
+                <p class="left-side">NOTES</p>
+                <p class="right-side">TOTAL AMOUNT</p>
+            </div>
+                <textarea id="text-area"></textarea>
+                <p style="font-size:40px; color:#4A4E74; margin-top:0;">$<span id="sum-el">0</span></p>
+                <button id="send-btn"><span class="material-icons">mail</span><span id="send-btn-txt">Send Invoice</span></button>
+        </div>
+        <script src="../src/index.js"></script>
+    </body>
+</html>
