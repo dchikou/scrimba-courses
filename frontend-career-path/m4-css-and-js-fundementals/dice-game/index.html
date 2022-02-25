@@ -1,0 +1,41 @@
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./src/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="rulesBtn" aria-label="rules">Rules</div>
+            <h1 id="message">Let's Roll!</h1>
+            <div class="players">
+                <div id="player1">
+                    <h1 class="scoreboard">Score: 
+                        <span id="player1Scoreboard">0</span>
+                    </h1>
+                    <div id="player1Dice" class="dice">-</div>
+                </div>
+                <div id="player2">
+                    <h1 class="scoreboard">Score: 
+                        <span id="player2Scoreboard">0</span>
+                    </h1>
+                    <div id="player2Dice" class="dice">-</div>
+                </div>
+            </div>
+            
+            <button id="startBtn">Start Game 🤞</button>
+            <button id="rollBtn">Roll Dice 🎲</button>
+            <button id="resetBtn">Reset Game 🔁</button>
+            <button id="dblBtn">Double Or Downer 🎱</button>
+        </div>
+        <div id="overlay">
+            <div id="modal">
+                <h3>How To Play</h3>
+                <p><strong>Start Game:</strong> The first player is chosen at random, with either side having a 50/50 chance of going first.</p>
+                <p><strong>Roll Dice:</strong> The game is set and now you're off! Each roll of the dice will add the value of the roll (1-6) to your total in a race for 30 points.</p>
+                <p><strong>Double Or Nothing:</strong> Feeling lucky? Take a chance! Earn double points for even numbers; LOSE double points for odds!</p>
+                <p><strong>Reset Game:</strong> One way or another the game is done and a winner declared. Want to play again? This button resets the game back to the start.</p>
+                <div id="close-modal" aria-label="close">Close</div>
+            </div>
+        </div>
+        <script src="./src/index.js"></script>
+    </body>
+</html>
