@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Color Scheme Generator</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./src/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body class="light-theme"> 
+        <header>
+            <h1>Color Scheme Generator</h1>
+            <nav>
+                <input type="color" id="selected-color" />
+                
+                <select id="theme-selector">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                
+                <button id="submit-button">Get Color Scheme</button>
+                <input type="checkbox" class="hidden" />
+                <span class="material-icons-outlined" id="mode-selector">
+                light_mode</span>
+            </nav>
+        </header>
+        
+        <main>
+            <div id="main-flex">
+                
+                <div class="color-flex">
+                    <div id="color-one" class="color-size"></div>
+                    <div id="color-one-hex" class="color-name"></div>
+                </div>
+                
+                <div class="color-flex">
+                    <div id="color-two" class="color-size"></div>
+                    <div id="color-two-hex" class="color-name"></div>
+                </div>
+                
+                <div class="color-flex">
+                    <div id="color-three" class="color-size"></div>
+                    <div id="color-three-hex" class="color-name"></div>
+                </div>
+                
+                <div class="color-flex">
+                    <div id="color-four" class="color-size"></div>
+                    <div id="color-four-hex" class="color-name"></div>
+                </div>
+                
+                <div class="color-flex">
+                    <div id="color-five" class="color-size"></div>
+                    <div id="color-five-hex" class="color-name"></div>
+                </div>
+                
+            </div>
+        </main>
+        <script src="./src/index.js"></script>
+    </body>
+</html>
