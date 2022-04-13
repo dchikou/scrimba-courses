@@ -4,7 +4,6 @@ const placeholderContainer = document.getElementById("placeholder-container")
 const searchBar = document.getElementById("searchbar")
 let html = ""
 let movieSearch = ""
-let newMovies = []
 
 searchBtn.addEventListener("click", () => {
     event.preventDefault()
@@ -12,7 +11,11 @@ searchBtn.addEventListener("click", () => {
         .then(res => res.json())
         .then(data => {
             if (data.Response === "False") {
-                errorMessage()
+                movieDiv.innerHTML = ""
+                placeholderContainer.innerHTML = `
+                    <p class="greyscale">Unable to find what you are looking for.</p>
+                    <p class="greyscale">Please try another search.</p>
+                    `
             } else {
                 movieDiv.innerHTML = ""
                 placeholderContainer.innerHTML = ""
@@ -21,8 +24,6 @@ searchBtn.addEventListener("click", () => {
                 data.Search.map(movie => fetch(`https://www.omdbapi.com/?apikey=a970ea1c&i=${movie.imdbID}`)
                     .then(res => res.json())
                     .then(data => {
-                        // console.log(data)
-                          
                             const {Poster, Title, Runtime, Genre, imdbRating, Plot, imdbID} = data
                             html += `
                             <div class="flex-row movie-cell">
@@ -71,13 +72,3 @@ movieDiv.addEventListener('click', e => {
         }
     }
 })
-
-
-function errorMessage() {
-    movieDiv.innerHTML = ""
-    placeholderContainer.innerHTML = `
-        <p class="greyscale">Unable to find what you are looking for.</p>
-        <p class="greyscale">Please try another search.</p>
-    `
-}
-

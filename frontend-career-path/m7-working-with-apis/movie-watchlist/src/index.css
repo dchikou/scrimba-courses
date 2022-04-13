@@ -15,11 +15,11 @@ body {
 
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url("./img/backround-img.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url("https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     position: relative;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center right;
+    background-position: center;
     background-color: lightgrey;
     min-height: 150px;
     width: 100%;
