@@ -1,11 +1,3 @@
-//Here is your OMDB key: a970ea1c
-//https://www.omdbapi.com/?apikey=a970ea1c&s=${search.value}
-
-//TMDP Key example to search by movie name
-//https://api.themoviedb.org/3/search/movie?api_key=5044f9df29ae23c4faf87fea1a99fefe&query=<<movie name>>
-//Linking to an image example
-//https://image.tmdb.org/t/p/w500/<<backdrop_path>>
-
 const movieDiv = document.getElementById("movie-container")
 const searchBtn = document.getElementById("search-btn")
 const placeholderContainer = document.getElementById("placeholder-container")
