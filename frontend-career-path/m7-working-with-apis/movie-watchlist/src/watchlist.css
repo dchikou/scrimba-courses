@@ -1,0 +1,7 @@
+.movie-info .watchlist-remove {
+    display: flex;
+}
+
+.movie-info .watchlist-add {
+    display: none;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Movie Watchlist</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./src/index.css">
+    </head>
+    
+    <body>
+        
+        <header>
+            <h1>Find your film</h1>
+            <a href="./watchlist.html">My Watchlist</a>
+        </header>
+
+        <section class="searchbar">
+            <input id="searchbar" type="text" placeholder="Search for a movie..." />
+            <button id="search-btn">Search</button>
+        </section>
+        
+        <main>
+            <div id="movie-container" class="flex-column"> 
+            </div> 
+            
+            <div id="placeholder-container">
+                <span class="material-icons icon-placeholder">ondemand_video</span><br>
+                <p class="greyscale">Start Exploring</p>
+            </div>
+        </main>
+        
+        <script src="./src/index.js"></script>
+            
+    </body>
+</html> 
+
