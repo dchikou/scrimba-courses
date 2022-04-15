@@ -67,7 +67,7 @@ navigator.geolocation.getCurrentPosition(position => {
     .then(data => {
         document.getElementById("inspiration").innerHTML += `
             <p class="quote">${data.quote}</p>
-            <p class="person">- ${data.author}</p>
+            <p class="quote">- ${data.author}</p>
             `
     })
     .catch(err => console.error(err))
