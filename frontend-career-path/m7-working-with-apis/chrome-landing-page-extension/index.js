@@ -56,3 +56,18 @@ navigator.geolocation.getCurrentPosition(position => {
         })
         .catch(err => console.error(err))
 });
+
+ fetch("https://api.goprogram.ai/inspiration")
+    .then(res => {
+        if (!res.ok) {
+            throw Error("Quote data not available")
+        }
+       return res.json()
+    })
+    .then(data => {
+        document.getElementById("inspiration").innerHTML += `
+            <p class="quote">${data.quote}</p>
+            <p class="person">- ${data.author}</p>
+            `
+    })
+    .catch(err => console.error(err))
