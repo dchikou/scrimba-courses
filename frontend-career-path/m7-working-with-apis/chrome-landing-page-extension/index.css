@@ -106,13 +106,13 @@ p#author {
     text-align: center;
     border: 2px solid lightgray;
     border-radius: 5px;
+    max-width: 75%;
 }
 
 #most-visited > a {
     font-family: inherit;
     text-decoration: none;
     color: #fff;
-    max-width: 80%;
 }
 
 .favicon {
@@ -125,6 +125,7 @@ p#author {
     background-color: gray;
     padding: .5rem .5rem;
     border-left: 1px solid lightgray;
+    flex: 1;
 }
 
 #most-visited > .link:first-child {

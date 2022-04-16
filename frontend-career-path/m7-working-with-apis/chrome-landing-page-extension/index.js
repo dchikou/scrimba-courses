@@ -25,8 +25,8 @@ fetch("https://api.coingecko.com/api/v3/coins/garlicoin")
         `
         document.getElementById("crypto").innerHTML += `
             <p>🎯: $${data.market_data.current_price.usd}</p>
-            <p>👆: $${data.market_data.high_24h.usd}</p>
-            <p>👇: $${data.market_data.low_24h.usd}</p>
+            <p>📈: $${data.market_data.high_24h.usd}</p>
+            <p>📉: $${data.market_data.low_24h.usd}</p>
         `
     })
     .catch(err => console.error(err))
@@ -78,7 +78,7 @@ function top_site(urls){
         siteList.innerHTML +=` 
         <a class="link" href="${urls[i].url}">
         <img class="favicon" src="https://s2.googleusercontent.com/s2/favicons?domain_url=${urls[i].url}" /><br>
-        ${urls[i].title.substring(0,15)}...</a><br>
+        ${urls[i].title.substring(0,20)}...</a><br>
         `   
         // https://s2.googleusercontent.com/s2/favicons?domain_url=${urls[i].url}   
         // chrome://favicon/${urls[i].url} need to work with this
