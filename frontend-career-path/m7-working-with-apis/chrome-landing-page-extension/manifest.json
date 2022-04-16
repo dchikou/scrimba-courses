@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Personal Dashboard",
     "version": "1.1.0",
-    "description": "Just for practicing async JS",
+    "description": "A beginner attempt at making a useful landing page",
     "permissions": [
         "topSites"
       ],
