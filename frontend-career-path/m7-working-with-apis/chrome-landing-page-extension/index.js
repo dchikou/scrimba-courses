@@ -71,3 +71,24 @@ navigator.geolocation.getCurrentPosition(position => {
             `
     })
     .catch(err => console.error(err))
+
+function top_site(urls){   
+    let siteList = document.getElementById('most-visited')
+    for (let i = 0; i < urls.length; i++) {
+        siteList.innerHTML +=` 
+        <a class="link" href="${urls[i].url}">
+        <img class="favicon" src="https://s2.googleusercontent.com/s2/favicons?domain_url=${urls[i].url}" /><br>
+        ${urls[i].title.substring(0,15)}...</a><br>
+        `   
+        // https://s2.googleusercontent.com/s2/favicons?domain_url=${urls[i].url}   
+        // chrome://favicon/${urls[i].url} need to work with this
+        // chrome://favicon2/?size=24&scale_factor=1x&show_fallback_monogram=&page_url=https%3A%2F%2F${urls[i].url}%2F
+    }
+}
+
+chrome.topSites.get(top_site);
+
+function getBaseUrl(data) {
+    data = new RegExp(/^.*\/\/[^\/]+/);
+    return data.exec(window.location.href);
+}
