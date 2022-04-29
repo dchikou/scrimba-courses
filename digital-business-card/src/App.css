@@ -1,0 +1,133 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  --dark-color: #1A1B21;
+  --light-color: white;
+  --footer-color: #161619;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #23252C;
+  color: var(--light-color);
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+}
+
+.business-card {
+  margin: 2rem auto;
+  max-width: 320px;
+  background-color: var(--dark-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #F5F5F5;
+  margin: 1.5rem 0 0;
+}
+
+p {
+  margin-top: .25rem;
+  color: #DCDCDC;
+  font-size: .75rem;
+}
+
+/* INFO SECTION */
+
+.header-container {
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.header-image {
+  max-width: 100%;
+}
+
+.header-image,
+.business-card {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.header-name {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.header-job {
+  margin: .65rem 0 .65rem;
+  font-size: .8rem;
+  color: #F3BF99;
+}
+
+.header-website {
+  color: var(--light-color);
+  font-size: .65rem;
+}
+
+.contact-button-one,
+.contact-button-two {
+  display: inline-block;
+  padding: .6em 1.25em;
+  font-size: .9rem;
+  margin: .85rem .5rem .5rem;
+  border-radius: 5px;
+}
+
+.contact-button-one {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.contact-button-two {
+  background-color: #5093E2;
+  color: var(--light-color);
+}
+
+.icon-link {
+  padding-right: .75em
+}
+
+/* ABOUT & INTERESTS SECTION */
+
+.about-container,
+.interests-container {
+  padding: 0 2rem;
+}
+
+/* FOOTER SECTION */
+
+.footer-container {
+  margin-top: 3rem;
+  background-color: var(--footer-color);
+  height: 65px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-container,
+.business-card {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.footer-icon {
+  color: #918E9B;
+  font-size: 1.5rem;
+}
