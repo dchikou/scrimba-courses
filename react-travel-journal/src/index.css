@@ -20,6 +20,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* NAVBAR */
 
 .navbar {
